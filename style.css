@@ -1,0 +1,46 @@
+html {
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+}
+
+body {
+  margin: 0;
+}
+
+.section {
+  height: 100vh;
+  position: relative;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: red;
+  clip-path: polygon(0 60%, 100% 50%, 100% 100%, 0 100%);
+}
+
+.image-person {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 80vh;
+}
+
+.section-inner {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.is-title {
+  font-size: 3rem;
+}
