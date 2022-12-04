@@ -1,4 +1,5 @@
 ---
+layout: base.html
 menuItems: [
   { title: 'Home', href: '#' },
   { title: 'About', href: '#' },
@@ -7,60 +8,48 @@ menuItems: [
 ]
 languages: [ 'de', 'en' ]
 ---
-<!doctype html>
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Florian Preinfalk</title>
-    <link rel="stylesheet" href="main.css">
-    <script src="main.js" defer></script>
-  </head>
-  <body>
-    <header>
-      {% include "navbar.html", menuItems: menuItems, languages: languages %}
-    </header>
-    <div class="section section-primary">
-      <div class="section-head">
-        <div class="section-head-inner">
-          <h1 class="is-title">
-            Florian Preinfalk
-          </h1>
-          <div class="is-subtitle">
-            Backend and Frontend Developer
-          </div>
-          <div class="triangle-1"></div>
-          <div class="triangle-2"></div>
-          <div class="triangle-3"></div>
-        </div>
+<header>
+  {% include "navbar.html", menuItems: menuItems, languages: languages %}
+</header>
+<div class="section section-primary">
+  <div class="section-head">
+    <div class="section-head-inner">
+      <h1 class="is-title">
+        Florian Preinfalk
+      </h1>
+      <div class="is-subtitle">
+        Backend and Frontend Developer
       </div>
-      <div class="section-break"></div>
-      <img class="image-person" src="assets/image.png">
+      <div class="triangle-1"></div>
+      <div class="triangle-2"></div>
+      <div class="triangle-3"></div>
     </div>
-    <div class="section container">
-      <h2 class="section-title">Projects</h2>
-      Here you can find some of the projects i've done in the last few years. Most of them are personal projects made just for fun.
+  </div>
+  <div class="section-break"></div>
+  <img class="image-person" src="assets/image.png">
+</div>
+<div class="section container">
+  <h2 class="section-title">Projects</h2>
+  Here you can find some of the projects i've done in the last few years. Most of them are personal projects made just for fun.
 
-      {%- for project in projects -%}
-        <div class="project">
-          <h3 class="project-title">{{ project.title }}</h2>
-          <p>
-            <ul class="inline-list">
-              {%- for tag in project.tags -%}
-                <li class="inline-list-item pill">{{ tag }}</li>
-              {%- endfor -%}
-            </ul>
-          </p>
-          <p>
-            {{ project.content }}
-          </p>
-          <p>
-            {%- for button in project.buttons -%}
-              <a class="button" href="{{ button.url }}">{{ button.title }}</a>
-            {%- endfor -%}
-          </p>
-        </div>
-      {%- endfor -%}
+  {%- for project in projects -%}
+    <div class="project">
+      <h3 class="project-title">{{ project.title }}</h2>
+      <p>
+        <ul class="inline-list">
+          {%- for tag in project.tags -%}
+            <li class="inline-list-item pill">{{ tag }}</li>
+          {%- endfor -%}
+        </ul>
+      </p>
+      <p>
+        {{ project.content }}
+      </p>
+      <p>
+        {%- for button in project.buttons -%}
+          <a class="button" href="{{ button.url }}">{{ button.title }}</a>
+        {%- endfor -%}
+      </p>
     </div>
-  </body>
-</html>
+  {%- endfor -%}
+</div>
