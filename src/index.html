@@ -6,10 +6,6 @@ menuItems: [
   { title: 'Contact', href: '#' }
 ]
 languages: [ 'de', 'en' ]
-projects: [
-  { title: 'fps6', tags: [ 'C++', 'OpenGL' ] },
-  { title: 'GMLAST', tags: [ 'C++', 'Syntaxanalysis' ] }
-]
 ---
 <!doctype html>
 
@@ -56,7 +52,12 @@ projects: [
             </ul>
           </p>
           <p>
-            Lorem ipsum.
+            {{ project.content }}
+          </p>
+          <p>
+            {%- for button in project.buttons -%}
+              <a class="button" href="{{ button.url }}">{{ button.title }}</a>
+            {%- endfor -%}
           </p>
         </div>
       {%- endfor -%}
