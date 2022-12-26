@@ -4,7 +4,7 @@
     "tags": [ "C++", "OpenGL" ],
     "content": "This is a game which is based on the <a href=\"http://web.archive.org/web/20150630205952/http://sandbox.yoyogames.com/make/tutorials\" target=\"_blank\">fps tutorial from GameMaker</a>, which is basically a Wolfenstein 3D clone with a single level. This version however was extended by cheats, mouse support, music and an indicator of when you have actually finished the level. In addition to the gameplay improvements, a random level mode was added, where new levels are generated on the fly. It was originally written in the spring of 2017.",
     "buttons": [
-      { "title": "Play in Browser", "url": "#foobar" },
+      { "title": "Play in Browser", "url": "/fps6" },
       { "title": "View Code", "url": "https://github.com/falki147/fps6" }
     ]
   },
