@@ -4,7 +4,8 @@ module.exports = {
   plugins: [new MiniCssExtractPlugin()],
   entry: {
     main: './src/index.js',
-    fps6: './src/fps6.js'
+    fps6: './src/fps6.js',
+    GMLAST: './src/GMLAST.js'
   },
   module: {
     rules: [
