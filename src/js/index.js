@@ -1,5 +1,3 @@
-require("../css/style.scss");
-
 function checkScrolled() {
   if (window.scrollY > 0) {
     document.body.classList.add('scrolled');
