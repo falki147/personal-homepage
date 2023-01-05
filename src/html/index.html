@@ -28,37 +28,11 @@ languages: [ 'de', 'en' ]
   <div class="section-break"></div>
 </div>
 <div class="section container">
-  <h2 class="section-title" id="about">About</h2>
-  <p>
-    Hi, I'm Florian Preinfalk and I'm a software developer. I'm currently employed by <a href="https://www.incert.at/" target="_blank">incert eTourismus</a> as a PHP backend developer.
-  </p>
+  {% include "about.html" %}
 </div>
 <div class="section container" id="projects">
-  <h2 class="section-title">Projects</h2>
-  {%- for project in projects -%}
-    <div class="project">
-      <h3 class="project-title">{{ project.title }}</h2>
-      <p>
-        <ul class="inline-list">
-          {%- for tag in project.tags -%}
-            <li class="inline-list-item pill">{{ tag }}</li>
-          {%- endfor -%}
-        </ul>
-      </p>
-      <p>
-        {{ project.content }}
-      </p>
-      <p>
-        {%- for button in project.buttons -%}
-          <!--<a class="button" href="{{ button.url }}">{{ button.title }}</a>-->
-        {%- endfor -%}
-      </p>
-    </div>
-  {%- endfor -%}
+  {% include "projects.html" %}
 </div>
 <div class="section container" id="contact">
-  <h2 class="section-title">Contact</h2>
-  <p>
-    
-  </p>
+  {% include "contact.html" %}
 </div>
