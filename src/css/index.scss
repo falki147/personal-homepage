@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .scrolled & {
-    box-shadow: 0 0 0.5rem #333;
+    box-shadow: 0 0 1rem rgba(#333, 0.5);
   }
 }
 
