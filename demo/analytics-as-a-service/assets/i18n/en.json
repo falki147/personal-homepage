@@ -1,0 +1,127 @@
+{
+  "actions": {
+    "create": "Create",
+    "update": "Update",
+    "goBack": "Go Back",
+    "login": "Login",
+    "logout": "Logout",
+    "cancel": "Cancel",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "minMax": {
+    "name": "Min Max",
+    "createDescription": "Creates a Min Max Detector which periodicly checks if a target value is between a given minimum and maximum."
+  },
+  "slidingWindow": {
+    "name": "Sliding Window",
+    "createDescription": "Creates a Sliding Window Detector which periodicly aggregates the target values in a timeframe and checks if the result value exceeds or is below a threshhold."
+  },
+  "menu": {
+    "home": "Home",
+    "logMessages": "Log Messages",
+    "metrics": "Metrics",
+    "detectors": "Detectors"
+  },
+  "detectorList": {
+    "title": "Detector List",
+    "subtitle": "Displays all detectors of the current client.",
+    "search": "Search",
+    "name": "Name",
+    "enabled": "Enabled",
+    "actions": "Actions",
+    "createDetector": "Create Detector",
+    "deleteDetectorTitle": "Are your sure you want to delete the detector?",
+    "delete": "Delete detector",
+    "duplicate": "Duplicate detector",
+    "duplicatePostfix": " - Copy"
+  },
+  "logMessagesList": {
+    "title": "Log Messages",
+    "search": "Search",
+    "date": "Date",
+    "instance": "Instance",
+    "message": "Message",
+    "type": "Type",
+    "filter": "Filter",
+    "timeframe": "Timeframe",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "any": "Any"
+  },
+  "login": {
+    "title": "Login",
+    "subtitle": "Login to gain access to AaaS."
+  },
+  "metrics": {
+    "title": "Metrics",
+    "subtitle": "Display metrics as a graph.",
+    "telemetryClass": "Telemetry Class",
+    "diagramType": "Diagram Type",
+    "timeframe": "Timeframe",
+    "dateTimespan": "Date- & Timespan",
+    "addToDashboard": "Add to Dashboard",
+    "addToDashboardSuccess": "Added graph to dashboard",
+    "to": "to"
+  },
+  "404": {
+    "title": "404 - Site wasn't found",
+    "subtitle": "Sorry about that"
+  },
+  "detectorForm": {
+    "name": "Name",
+    "triggerPeriod": "Trigger Period in Seconds",
+    "triggerPeriodHelp": "Determines how often the detectors checks for anomalies",
+    "action": "Action",
+    "actionHelp": "Action which is called when the detector is triggered",
+    "telemetryTarget": "Telemetry Data Target",
+    "telemetryTargetHelp": "Telemetry data class which should be checked"
+  },
+  "minMaxForm": {
+    "titleCreate": "Min Max Detector Creation",
+    "subtitleCreate": "Create a Min Max Detector.",
+    "titleEdit": "Edit Min Max Detector",
+    "subtitleEdit": "Edit an exisiting Min Max Detector.",
+    "minimum": "Minimum Value",
+    "maximum": "Maximum Value",
+    "outlierThreshold": "Outlier Threshold"
+  },
+  "slidingWindowForm": {
+    "titleCreate": "Sliding Window Detector Creation",
+    "subtitleCreate": "Create a Sliding Window Detector.",
+    "titleEdit": "Edit Sliding Window Detector",
+    "subtitleEdit": "Edit an existing Sliding Window Detector.",
+    "timespanSeconds": "Timespan Seconds",
+    "thresholdValue": "Threshold Value",
+    "aggregationOperator": "Aggregation Operator",
+    "comparisonOperator": "Comparison Operator"
+  },
+  "aggregationOperator": {
+    "CURRENT_VALUE": "Current Value",
+    "SUM": "Sum",
+    "AVERAGE": "Average"
+  },
+  "comparisonOperator": {
+    "LESS_THAN": "Greater Than",
+    "GREATER_THAN": "Less Than"
+  },
+  "diagramType": {
+    "LINE": "Line",
+    "BOXPLOT": "Boxplot",
+    "GAUGE": "Gauge"
+  },
+  "timeframe": {
+    "ALL": "All data",
+    "LAST_HOUR": "Last hour",
+    "LAST_5_HOURS": "Last 5 hours",
+    "LAST_DAY": "Last day",
+    "LATEST_INSTANCE": "Latest instance",
+    "CUSTOM": "Custom"
+  },
+  "errors": {
+    "apiError": "API Request Failed",
+    "required": "This field is required.",
+    "min": "The value must be {min} or greater.",
+    "dateRange": "The start date must be before end date"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "actions": {
+    "create": "Erstellen",
+    "update": "Aktualisieren",
+    "goBack": "Zurück",
+    "login": "Login",
+    "logout": "Logout",
+    "cancel": "Abbrechen",
+    "yes": "Ja",
+    "no": "Nein"
+  },
+  "minMax": {
+    "name": "Min Max",
+    "createDescription": "Erstellt einen Min Max Detekotr welcher in periodischen Abständen überprüft, ob der Wert zwischen einem Minimum und Maximum ist."
+  },
+  "slidingWindow": {
+    "name": "Sliding Window",
+    "createDescription": "Erstellt einen Sliding Window Detektor welcher periodisch die Werte eines Zeitfensters aggregiert und überprüft, ob das Result höher oder niedrieger als ein bestimmter Wert ist."
+  },
+  "menu": {
+    "home": "Home",
+    "logMessages": "Log-Nachrichten",
+    "metrics": "Metriken",
+    "detectors": "Detektoren"
+  },
+  "detectorList": {
+    "title": "Detektor Liste",
+    "subtitle": "Zeigt alle Detektoren des aktuellen Clients an.",
+    "name": "Name",
+    "enabled": "Aktiv",
+    "actions": "Aktionen",
+    "createDetector": "Detektor erstellen",
+    "deleteDetectorTitle": "Sind Sie sicher, dass sie den Detektor löschen wollen?",
+    "delete": "Detektor löschen",
+    "duplicate": "Detektor duplizieren",
+    "duplicatePostfix": " - Kopie"
+  },
+  "logMessagesList": {
+    "title": "Log-Nachrichten",
+    "search": "Suche",
+    "date": "Datum",
+    "instance": "Instanz",
+    "message": "Nachricht",
+    "type": "Typ",
+    "filter": "Filter",
+    "timeframe": "Zeitraum",
+    "startDate": "Startdatum",
+    "endDate": "Enddatum",
+    "any": "Jeder"
+  },
+  "login": {
+    "title": "Login",
+    "subtitle": "Bitte loggen Sie sich ein, um AaaS zu verwenden."
+  },
+  "metrics": {
+    "title": "Metriken",
+    "subtitle": "Stellt Metriken in einem Graph dar.",
+    "telemetryClass": "Telemetrie Klasse",
+    "diagramType": "Diagramm-Typ",
+    "timeframe": "Zeitraum",
+    "dateTimespan": "Datums- & Zeitspanne",
+    "addToDashboard": "Zum Dashboard hinzufügen",
+    "addToDashboardSuccess": "Zum Dashboard hinzugefügt",
+    "to": "bis"
+  },
+  "404": {
+    "title": "404 - Seite wurde nicht gefunden",
+    "subtitle": "Tut uns leid"
+  },
+  "detectorForm": {
+    "name": "Name",
+    "triggerPeriod": "Auslösedauer in Sekunden",
+    "triggerPeriodHelp": "Bestimmt, wie oft der Detektor auf Anomalien prüft",
+    "action": "Aktion",
+    "actionHelp": "Aktion, welche aufgerufen wird, wenn der Detektor auslöst",
+    "telemetryTarget": "Telemetrie Daten",
+    "telemetryTargetHelp": "Telemetrie Daten, welche überprüft werden sollen"
+  },
+  "minMaxForm": {
+    "titleCreate": "Min Max Detektor Erstellung",
+    "subtitleCreate": "Einen Min Max Detektor erstellen.",
+    "titleEdit": "Min Max Detektor bearbeiten",
+    "subtitleEdit": "Existierenden Min Max Detektor bearbeiten.",
+    "minimum": "Minimum",
+    "maximum": "Maximum",
+    "outlierThreshold": "Schwelle für Ausreißer"
+  },
+  "slidingWindowForm": {
+    "titleCreate": "Sliding Window Detektor Erstellung",
+    "subtitleCreate": "Einen Sliding Window Detektor erstellen.",
+    "titleEdit": "Sliding Window Detektor bearbeiten",
+    "subtitleEdit": "Existierenden Sliding Window Detektor bearbeiten.",
+    "timespanSeconds": "Zeitspanne in Sekunden",
+    "thresholdValue": "Schwellwert",
+    "aggregationOperator": "Aggregations-Operator",
+    "comparisonOperator": "Vergleichs-Operator"
+  },
+  "aggregationOperator": {
+    "CURRENT_VALUE": "Aktuellster Wert",
+    "SUM": "Summe",
+    "AVERAGE": "Mittelwert"
+  },
+  "comparisonOperator": {
+    "LESS_THAN": "Größer als",
+    "GREATER_THAN": "Kleiner als"
+  },
+  "diagramType": {
+    "LINE": "Liniendiagram",
+    "BOXPLOT": "Boxplot",
+    "GAUGE": "Pegel"
+  },
+  "timeframe": {
+    "ALL": "Alle Daten",
+    "LAST_HOUR": "Letzte Stunde",
+    "LAST_5_HOURS": "Letzen 5 Stunden",
+    "LAST_DAY": "Letzter Tag",
+    "LATEST_INSTANCE": "Neueste Instance",
+    "CUSTOM": "Benutzerdefiniert"
+  },
+  "errors": {
+    "apiError": "API-Anfrage ist fehlgeschlagen",
+    "required": "Dieses Feld ist verpflichtend auszufüllen.",
+    "min": "Der Wert muss {min} oder größer sein.",
+    "dateRange": "Der Startzeitpunkt muss vor dem Endzeitpunkt sein"
+  }
+}
