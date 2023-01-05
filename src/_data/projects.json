@@ -22,5 +22,10 @@
     "title": "MikePay",
     "tags": [ "JavaScript" ],
     "content": "This project facilitates collective food delivery orders. Each user can add their prefered item to an online order. The admin pays for the order and the user can pay him later. It was developed for the WDP3 course."
+  },
+  {
+    "title": "MVVWB",
+    "tags": [ "WordPress", "PHP", "CSS", "JavaScript" ],
+    "content": "I'm the administrator of <a href=\"https://www.mvvwb.at/\" target=\"_blank\">www.mvvwb.at</a>, the website of our local wind band. The site is built with WordPress. It uses a custom template and custom plugins."
   }
 ]

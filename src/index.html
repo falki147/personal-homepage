@@ -36,8 +36,6 @@ languages: [ 'de', 'en' ]
 </div>
 <div class="section container">
   <h2 class="section-title">Projects</h2>
-  Here you can find some of the projects i've done in the last few years. Most of them are personal projects made just for fun.
-
   {%- for project in projects -%}
     <div class="project">
       <h3 class="project-title">{{ project.title }}</h2>
@@ -53,9 +51,15 @@ languages: [ 'de', 'en' ]
       </p>
       <p>
         {%- for button in project.buttons -%}
-          <a class="button" href="{{ button.url }}">{{ button.title }}</a>
+          <!--<a class="button" href="{{ button.url }}">{{ button.title }}</a>-->
         {%- endfor -%}
       </p>
     </div>
   {%- endfor -%}
+  <div class="section container">
+    <h2 class="section-title">Contact</h2>
+    <p>
+      
+    </p>
+  </div>
 </div>
