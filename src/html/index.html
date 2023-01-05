@@ -2,9 +2,9 @@
 layout: base.html
 menuItems: [
   { title: 'Home', href: '#' },
-  { title: 'About', href: '#' },
-  { title: 'Projects', href: '#' },
-  { title: 'Contact', href: '#' }
+  { title: 'About', href: '#about' },
+  { title: 'Projects', href: '#projects' },
+  { title: 'Contact', href: '#contact' }
 ]
 languages: [ 'de', 'en' ]
 ---
@@ -28,12 +28,12 @@ languages: [ 'de', 'en' ]
   <div class="section-break"></div>
 </div>
 <div class="section container">
-  <h2 class="section-title">About</h2>
+  <h2 class="section-title" id="about">About</h2>
   <p>
     Hi, I'm Florian Preinfalk and I'm a software developer. I'm currently employed by <a href="https://www.incert.at/" target="_blank">incert eTourismus</a> as a PHP backend developer.
   </p>
 </div>
-<div class="section container">
+<div class="section container" id="projects">
   <h2 class="section-title">Projects</h2>
   {%- for project in projects -%}
     <div class="project">
@@ -56,7 +56,7 @@ languages: [ 'de', 'en' ]
     </div>
   {%- endfor -%}
 </div>
-<div class="section container">
+<div class="section container" id="contact">
   <h2 class="section-title">Contact</h2>
   <p>
     
