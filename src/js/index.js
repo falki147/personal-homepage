@@ -1,4 +1,4 @@
-require("./style.scss");
+require("../css/style.scss");
 
 function checkScrolled() {
   if (window.scrollY > 0) {

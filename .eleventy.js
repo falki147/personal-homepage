@@ -3,7 +3,7 @@ module.exports = config => {
 
   return {
     dir: {
-      input: 'src',
+      input: 'src/html',
       output: 'dist'
     }
   };

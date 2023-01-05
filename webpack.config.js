@@ -3,9 +3,9 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   plugins: [new MiniCssExtractPlugin()],
   entry: {
-    main: './src/index.js',
-    fps6: './src/fps6.js',
-    GMLAST: './src/GMLAST.js'
+    main: './src/js/index.js',
+    fps6: './src/js/fps6.js',
+    GMLAST: './src/js/GMLAST.js'
   },
   module: {
     rules: [
