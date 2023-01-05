@@ -23,9 +23,9 @@ body {
 
 .section {
   &-primary {
-    height: 100vh;
     position: relative;
     background: $secondary;
+    padding-bottom: 4rem;
     
     /*&::before {
       content: '';
@@ -42,26 +42,21 @@ body {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 50rem;
   margin: 0 auto;
-}
-
-.image-person {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 80vh;
+  padding: 0 1rem;
 }
 
 .section-head {
   text-align: center;
-  padding-top: 35vh;
+  padding-top: 7rem;
   background: $primary;
 }
 
 .section-head-inner {
   position: relative;
   display: inline-block;
+  padding: 3rem 0;
 }
 
 .section-break {
