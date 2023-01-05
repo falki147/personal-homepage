@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bestellen - MikePay</title>
+    <base href="/demo/mike-pay/">
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/svg+xml" href="assets/mikepay-icon.svg" sizes="any">
+  </head>
+  <body class="min-vh-100 d-flex flex-column">
+    <!-- header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light border-bottom border-2">
+        <div class="container-fluid">
+          <div class="navbar-brand">
+            <a href="">
+              <img src="assets/mikepay.svg" alt="MikePay logo">
+            </a>
+          </div>
+          <button class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbar-menu"
+                  aria-controls="navbar-menu"
+                  aria-expanded="false"
+                  aria-label="Menü anzeigen">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="navbar-nav me-auto mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="">Home</a>
+              </li>
+              <li class="nav-item admin-only">
+                <a class="nav-link" href="create_order/">Bestellung erstellen</a>
+              </li>
+              <li class="nav-item user-only">
+                <a class="nav-link" href="orders/">Bestellungen</a>
+              </li>
+              <li class="nav-item dropdown admin-only">
+                <a class="nav-link dropdown-toggle"
+                   href="#"
+                   id="navbar-dropdown-lists"
+                   role="button"
+                   data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                  Schulden
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbar-dropdown-lists">
+                  <li><a href="debtors/" class="dropdown-item">Schuldnerliste</a></li>
+                  <li><a href="debt_history/" class="dropdown-item">Schuldenhistorie</a></li>
+                  <li><a href="enter_debts/" class="dropdown-item">Schulden eintragen</a></li>
+                  <li><a href="settle_debts/" class="dropdown-item">Schulden begleichen</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown user-only">
+                <a class="nav-link dropdown-toggle"
+                   href="#"
+                   id="navbar-dropdown-profile"
+                   role="button"
+                   data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                  Mein Profil
+                </a>
+                <ul class="dropdown-menu mb-3" aria-labelledby="navbar-dropdown-profile">
+                  <li><a href="edit_user/" class="dropdown-item">Profil anzeigen</a></li>
+                  <li><a href="#" id="navbar-dropdown-debts" class="dropdown-item">Schulden anzeigen</a></li>
+                </ul>
+              </li>
+              <li class="nav-item mt-2 mt-lg-0 user-only">
+                <button id="logout-btn" class="btn btn-primary nav-item">Abmelden</button>
+              </li>
+              <li class="nav-item mt-2 mt-lg-0 guest-only">
+                <a class="nav-link" href="login/">Anmelden</a>
+              </li>
+              <li class="nav-item mt-2 mt-lg-0 guest-only">
+                <a class="btn btn-primary nav-item" href="create_user/">Benutzer erstellen</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-grow-1 py-4 d-flex">
+      
+<div class="container">
+  <div class="d-flex justify-content-center align-items-center h-100">
+    <div class="shadow p-3 bg-white rounded form-wrapper">
+      <div class="m-4">
+        
+<form id="place-order-form" novalidate>
+  <div class="form-group">
+    <h1 id="title" class="mb-4">Bestellen</h1>
+
+    <div class="alert-outlet"></div>
+
+    <p id="description"></p>
+    <p id="url"></p>
+
+    <div class="form-group my-2">
+      <label for="item" class="form-label mb-0">Artikel</label>
+      <input type="text"
+             class="form-control"
+             id="item"
+             placeholder="Wurstsemmel"
+             name="item" required>
+
+      <div id="item-val" class="invalid-feedback">
+        Bitte geben Sie einen Artikel an!
+      </div>
+    </div>
+
+    <div class="form-group my-2">
+      <label for="price" class="form-label mb-0">Preis</label>
+      <input type="text"
+             class="form-control"
+             id="price"
+             placeholder="1,50"
+             name="price"
+             pattern="(\d+(,\d*)?|,\d+)" required>
+      
+      <div id="price-val" class="invalid-feedback">
+        Bitte geben Sie einen gültigen Preis an!
+      </div>
+    </div>
+
+    <div class="form-group my-2 guest-only">
+      <label for="firstname" class="form-label mb-0">Vorname</label>
+      <input type="text"
+             class="form-control"
+             id="firstname"
+             placeholder="Max"
+             name="firstname"
+             required>
+
+      <div id="firstname-val" class="invalid-feedback">
+        Bitte geben Sie ihren Vornamen an!
+      </div>
+    </div>
+
+    <div class="form-group my-2 guest-only">
+      <label for="lastname" class="form-label mb-0">Nachname</label>
+      <input type="text"
+             class="form-control"
+             id="lastname"
+             placeholder="Mustermann"
+             name="lastname"
+             required>
+
+      <div id="lastname-val" class="invalid-feedback">
+        Bitte geben Sie ihren Nachnamen an!
+      </div>
+    </div>
+
+    <div class="form-group mt-4">
+      <button type="submit"
+              id="place-order-btn"
+              class="btn btn-lg btn-primary w-100 mb-2">Bestellen</button>
+
+      <a id="goto-order-btn" class="btn btn-lg btn-outline-secondary w-100 user-only" href="#">
+        Zur Bestellung
+      </a>
+    </div>
+    
+  </div>
+</form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        
+        <div class="row text-center d-flex justify-content-center mb-3">
+          <div class="col-auto mb-3">
+            <a href="impressum/">Impressum</a>
+          </div>
+          <div class="col-auto mb-3">
+           <a href="about_us/">Über uns</a>
+          </div>
+          <div class="col-auto mb-3">
+            <a href="help/">Hilfe</a>
+          </div>
+          <div class="col-auto mb-3">
+            <a href="contact/">Kontakt</a>
+          </div>
+        </div>
+        <hr>
+      </div>
+      
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright: MikePay Inc.
+      </div>
+    </footer>
+  </body>
+</html>
