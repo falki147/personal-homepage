@@ -18,7 +18,7 @@ a {
   text-decoration: none;
 }
 
-#code-editor.code-editor-eof p:last-child {
+.code-editor-eof p:last-child {
   display: inline-block;
   padding-right: 5px;
   background: url(/assets/wave.gif) right bottom no-repeat;
