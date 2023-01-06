@@ -5,7 +5,7 @@ module.exports = {
   entry: {
     main: [ './src/js/index.js', './src/css/index.scss' ],
     fps6: './src/js/fps6.js',
-    GMLAST: './src/js/GMLAST.js'
+    GMLAST: [ './src/js/GMLAST.js', './src/css/GMLAST.scss' ]
   },
   module: {
     rules: [

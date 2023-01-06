@@ -1,0 +1,25 @@
+@import "quill/dist/quill.snow";
+
+#code-editor {
+  font-family: Consolas;
+  font-size: 12px;
+}
+
+#code-editor u {
+  display: inline-block;
+  position: relative;
+  background: url(/assets/wave.gif) bottom repeat-x;
+  text-decoration: none;
+}
+
+a {
+  font-family: Roboto, sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+#code-editor.code-editor-eof p:last-child {
+  display: inline-block;
+  padding-right: 5px;
+  background: url(/assets/wave.gif) right bottom no-repeat;
+}

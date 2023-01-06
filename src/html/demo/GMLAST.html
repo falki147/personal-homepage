@@ -1,41 +1,16 @@
----
-layout: base.html
-title: fps6
----
-		<script src="/GMLAST.js"></script>
-		<script src="/assets/GMLAST/GMLASTjs.js"></script>
-		<script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.0/d3.min.js"></script>
-		<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+<!doctype html>
 
-		<style>
-			#code-editor {
-				font-family: Consolas;
-				font-size: 12px;
-			}
-			
-			#code-editor u {
-				display: inline-block;
-				position: relative;
-				background: url(wave.gif) bottom repeat-x;
-				text-decoration: none;
-			}
-			
-			a {
-				font-family: Roboto, sans-serif;
-				color: black;
-				text-decoration: none;
-			}
-		</style>
-		<style id="code-editor-eof">
-			#code-editor p:last-child {
-				display: inline-block;
-				padding-right: 5px;
-				background: url(wave.gif) right bottom no-repeat;
-			}
-		</style>
-		<a href="https://www.github.com/falki147/GMLAST">
-			<h1>GMLAST - Example</h1>
-		</a>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Florian Preinfalk</title>
+    <link rel="stylesheet" href="/GMLAST.css">
+    <script src="/GMLAST.js" defer></script>
+		<script src="/assets/GMLAST/GMLASTjs.js" defer></script>
+  </head>
+  <body>
+    <h1>GMLAST - Example</h1>
 		<div id="code-editor"></div>
 		<div id="ast-tree"></div>
+  </body>
+</html>
