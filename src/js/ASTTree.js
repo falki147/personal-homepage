@@ -18,7 +18,7 @@ export class ASTTree {
 
     const chart = createSVGFromTree(node, {
       label: d => d.name,
-      click(data) {
+      click: (data) => {
         for (const cb of this._onClick) {
           cb(data);
         }
