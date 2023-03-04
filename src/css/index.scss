@@ -53,9 +53,14 @@ body {
 }
 
 .section-head-inner {
-  position: relative;
   display: inline-block;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
+  z-index: 1;
+  position: relative;
+
+  .is-title {
+    padding: 0 3rem;
+  }
 }
 
 .section-break {
@@ -80,6 +85,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.5rem;
 }
 
+.title-first-part {
+  display: inline-block;
+  position: relative;
+}
+
 .triangle-1, .triangle-2, .triangle-3 {
   position: absolute;
   height: 0;
@@ -88,19 +98,37 @@ h1, h2, h3, h4, h5, h6 {
   border-top-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
-  z-index: 1;
+  z-index: -1;
 }
 
 .triangle-1 {
-  transform: translateX(-5rem) translateY(-15rem) rotate(20deg) translateX(-7rem) scaleY(0.2);
+  transform: translateX(-5rem) translateY(-13rem) rotate(20deg) translateX(-7rem) scaleY(0.2);
 }
 
 .triangle-2 {
-  transform: translateX(-5rem) translateY(-15rem) rotate(-20deg) translateX(-7rem) scaleY(0.2);
+  transform: translateX(-5rem) translateY(-13rem) rotate(-20deg) translateX(-7rem) scaleY(0.2);
 }
 
 .triangle-3 {
-  transform: translateX(-5rem) translateY(-15rem) rotate(-60deg) translateX(-7rem) scaleY(0.2);
+  transform: translateX(-5rem) translateY(-13rem) rotate(-60deg) translateX(-7rem) scaleY(0.2);
+}
+
+@media only screen and (max-width: 56rem) {
+  .triangle-1, .triangle-2, .triangle-3 {
+    border-width: 5rem;
+  }
+
+  .triangle-1 {
+    transform: translateX(-1.5rem) translateY(-7rem) rotate(45deg) translateX(-6rem) scaleY(0.3);
+  }
+  
+  .triangle-2 {
+    transform: translateX(-1.5rem) translateY(-7rem) rotate(10deg) translateX(-6rem) scaleY(0.3);
+  }
+  
+  .triangle-3 {
+    transform: translateX(-1.5rem) translateY(-7rem) rotate(-25deg) translateX(-6rem) scaleY(0.3);
+  }
 }
 
 .nav {
