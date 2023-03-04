@@ -4,28 +4,44 @@
     "tags": [ "C++", "OpenGL" ],
     "content": "This is a game which is based on the <a href=\"http://web.archive.org/web/20150630205952/http://sandbox.yoyogames.com/make/tutorials\" target=\"_blank\">fps tutorial from GameMaker</a>, which is basically a Wolfenstein 3D clone with a single level. This version however was extended by cheats, mouse support, music and an indicator of when you have actually finished the level. In addition to the gameplay improvements, a random level mode was added, where new levels are generated on the fly.",
     "buttons": [
-      { "title": "Play in Browser", "url": "/fps6" },
+      { "title": "Play in Browser", "url": "/demo/fps6" },
       { "title": "View Code", "url": "https://github.com/falki147/fps6" }
     ]
   },
   {
     "title": "GMLAST",
     "tags": [ "C++", "Syntaxanalysis" ],
-    "content": "GMLAST is a parser and lexer for the <a href=\"https://en.wikipedia.org/wiki/GameMaker#GameMaker_Language\" target=\"_blank\">Game Maker Language (GML)</a>. It takes text and converts it into an <a href=\"https://en.wikipedia.org/wiki/Abstract_syntax_tree\" target=\"_blank\">abstract syntax tree (AST)</a> for further processing. It can also be used for error detection."
+    "content": "GMLAST is a parser and lexer for the <a href=\"https://en.wikipedia.org/wiki/GameMaker#GameMaker_Language\" target=\"_blank\">Game Maker Language (GML)</a>. It takes text and converts it into an <a href=\"https://en.wikipedia.org/wiki/Abstract_syntax_tree\" target=\"_blank\">abstract syntax tree (AST)</a> for further processing. It can also be used for error detection.",
+    "buttons": [
+      { "title": "Try the demo", "url": "/demo/GMLAST" },
+      { "title": "View Code", "url": "https://github.com/falki147/GMLAST" }
+    ]
   },
   {
     "title": "Analytics as a Service (Frontend)",
     "tags": [ "Angular", "TypeScript" ],
-    "content": "\"Analytics as a Service\", or AaaS, is a service for gathering data and log messages of applications. It was developed for the WEA5 course. This only contains the frontend."
+    "content": "\"Analytics as a Service\", or AaaS, is a service for gathering data and log messages of applications. It was developed for the WEA5 course. This only contains the frontend.",
+    "buttons": [
+      { "title": "Try the demo", "url": "/demo/analytics-as-a-service" },
+      { "title": "View Code", "url": "https://github.com/falki147/wea5" }
+    ]
   },
   {
     "title": "MikePay",
     "tags": [ "JavaScript" ],
-    "content": "This project facilitates collective food delivery orders. Each user can add their prefered item to an online order. The admin pays for the order and the user can pay him later. It was developed for the WDP3 course."
+    "content": "This project facilitates collective food delivery orders. Each user can add their prefered item to an online order. The admin pays for the order and the user can pay him later. It was developed for the WDP3 course.",
+    "buttons": [
+      { "title": "Try the demo", "url": "/demo/mike-pay" },
+      { "title": "View Code", "url": "https://github.com/falki147/MikePay" }
+    ]
   },
   {
     "title": "MVVWB",
     "tags": [ "WordPress", "PHP", "CSS", "JavaScript" ],
-    "content": "I'm the administrator of <a href=\"https://www.mvvwb.at/\" target=\"_blank\">www.mvvwb.at</a>, the website of our local wind band. The site is built with WordPress. It uses a custom template and custom plugins."
+    "content": "I'm the administrator of <a href=\"https://www.mvvwb.at/\" target=\"_blank\">www.mvvwb.at</a>, the website of our local wind band. The site is built with WordPress. It uses a custom template and custom plugins.",
+    "buttons": [
+      { "title": "Visit mvvwb.at", "url": "https://mvvwb.at/" },
+      { "title": "View Code", "url": "https://github.com/falki147/mvvwb" }
+    ]
   }
 ]

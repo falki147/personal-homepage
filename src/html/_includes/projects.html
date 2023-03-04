@@ -1,21 +1,19 @@
 <h2 class="section-title">Projects</h2>
-{%- for project in projects -%}
+{% for project in projects %}
   <div class="project">
-    <h3 class="project-title">{{ project.title }}</h2>
-    <p>
-      <ul class="inline-list">
-        {%- for tag in project.tags -%}
-          <li class="inline-list-item pill">{{ tag }}</li>
-        {%- endfor -%}
-      </ul>
-    </p>
+    <h3 class="project-title">{{ project.title }}</h3>
+    <ul class="inline-list">
+      {% for tag in project.tags %}
+        <li class="inline-list-item pill">{{ tag }}</li>
+      {% endfor %}
+    </ul>
     <p>
       {{ project.content }}
     </p>
     <p>
-      {%- for button in project.buttons -%}
-        <!--<a class="button" href="{{ button.url }}">{{ button.title }}</a>-->
-      {%- endfor -%}
+      {% for button in project.buttons %}
+        <a class="button" href="{{ button.url }}" target="_blank">{{ button.title }}</a>
+      {% endfor %}
     </p>
   </div>
 {%- endfor -%}
