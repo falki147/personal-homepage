@@ -34,7 +34,7 @@ ready(() => {
       controlledElement.classList.toggle('open', button.classList.contains('open'));
     });
   }
-});
 
-document.addEventListener('scroll', checkScrolled);
-checkScrolled();
+  document.addEventListener('scroll', checkScrolled);
+  checkScrolled();
+});
