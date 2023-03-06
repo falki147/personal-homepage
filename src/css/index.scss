@@ -11,7 +11,7 @@ $primary: $color2;
 $secondary: $color5;
 $textcolor: #333;
 
-$responsive-mobile: 520px;
+$responsive-mobile: 33rem;
 
 html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -83,6 +83,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 4rem;
   font-weight: bold;
   text-transform: uppercase;
+
+  @media screen and (max-width: $responsive-mobile) {
+    font-size: 3rem;
+  }
 }
 
 .is-subtitle {
