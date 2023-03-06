@@ -33,6 +33,23 @@ export class CodeEditor {
         textChangedDebounced();
       }
     });
+
+    if (typeof global.Module !== 'object') {
+      global.Module = {};
+    }
+
+    if (!global.Module.Parse) {
+      const that = this;
+
+      const cb = global.Module['onRuntimeInitialized'] || (() => {});
+      global.Module['onRuntimeInitialized'] = function () {
+        that._textChanged();
+        return cb.apply(this, arguments);
+      };
+    }
+    else {
+      this._textChanged();
+    }
   }
 
   _textChanged() {
@@ -46,13 +63,13 @@ export class CodeEditor {
 
   _parseCode() {
     // Parse function is loaded with emscripten, check if it's loaded
-    if (!Module.Parse) {
+    if (!global.Module.Parse) {
       return { root: null, messages: [] };
     }
 
     // Get text from editor and replace &nbsp; with space
     const text = this._codeEditor.getText().replace(/\xA0/g, ' ');
-    return Module.Parse(text);
+    return global.Module.Parse(text);
   }
 
   _updateEditorErrors(messages) {

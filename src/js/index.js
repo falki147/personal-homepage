@@ -1,18 +1,11 @@
+import { ready } from "./ready";
+
 function checkScrolled() {
   if (window.scrollY > 0) {
     document.body.classList.add('scrolled');
   }
   else {
     document.body.classList.remove('scrolled');
-  }
-}
-
-function ready(cb) {
-  if (document.readyState === 'complete') {
-    cb();
-  }
-  else {
-    document.addEventListener('DOMContentLoaded', cb);
   }
 }
 

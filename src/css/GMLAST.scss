@@ -1,5 +1,10 @@
 @import "quill/dist/quill.snow";
 
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
 #code-editor {
   font-family: Consolas;
   font-size: 12px;
@@ -22,4 +27,22 @@ a {
   display: inline-block;
   padding-right: 5px;
   background: url(/assets/wave.gif) right bottom no-repeat;
+}
+
+#error-list {
+  display: block;
+  padding: 0;
+}
+
+.message {
+  display: block;
+  padding: 1rem 1.5rem;
+  margin: 0.2rem 0;
+  border: 1px solid #570000;
+  background: #800000;
+  color: #fff;
+}
+
+.message-warning {
+  background: #b18700;
 }
