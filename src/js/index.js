@@ -9,22 +9,39 @@ function checkScrolled() {
   }
 }
 
+function getChildrenHeight(element) {
+  let height = 0;
+  for (const child of element.children) {
+    height += child.offsetHeight;
+  }
+
+  return height;
+}
+
 ready(() => {
   for (const button of document.querySelectorAll('.navbar-button')) {
+    const controlledElement = document.getElementById(button.getAttribute('aria-controls'));
+    if (!controlledElement) {
+      continue;
+    }
+
+    function toggle(value = undefined) {
+      button.classList.toggle('open', value);
+
+      const opened = button.classList.contains('open');
+
+      controlledElement.style.height = opened ? getChildrenHeight(controlledElement) + 'px' : '0';
+      controlledElement.parentElement.classList.toggle('open', opened);
+    }
+
     button.addEventListener('click', () => {
-      button.classList.toggle('open');
+      toggle();
+    });
 
-      const controls = button.getAttribute('aria-controls');
-      if (!controls) {
-        return;
+    controlledElement.addEventListener('click', () => {
+      if (button.classList.contains('open')) {
+        toggle(false);
       }
-
-      const controlledElement = document.getElementById(controls);
-      if (!controlledElement) {
-        return;
-      }
-
-      controlledElement.classList.toggle('open', button.classList.contains('open'));
     });
   }
 
