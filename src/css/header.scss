@@ -1,0 +1,45 @@
+.title-first-part {
+  display: inline-block;
+  position: relative;
+}
+
+.triangle-1, .triangle-2, .triangle-3 {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: 10rem solid $color3;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  z-index: -1;
+}
+
+.triangle-1 {
+  transform: translateX(-5rem) translateY(-13rem) rotate(20deg) translateX(-7rem) scaleY(0.2);
+}
+
+.triangle-2 {
+  transform: translateX(-5rem) translateY(-13rem) rotate(-20deg) translateX(-7rem) scaleY(0.2);
+}
+
+.triangle-3 {
+  transform: translateX(-5rem) translateY(-13rem) rotate(-60deg) translateX(-7rem) scaleY(0.2);
+}
+
+@media only screen and (max-width: 56rem) {
+  .triangle-1, .triangle-2, .triangle-3 {
+    border-width: 5rem;
+  }
+
+  .triangle-1 {
+    transform: translateX(-1.5rem) translateY(-7rem) rotate(45deg) translateX(-6rem) scaleY(0.3);
+  }
+  
+  .triangle-2 {
+    transform: translateX(-1.5rem) translateY(-7rem) rotate(10deg) translateX(-6rem) scaleY(0.3);
+  }
+  
+  .triangle-3 {
+    transform: translateX(-1.5rem) translateY(-7rem) rotate(-25deg) translateX(-6rem) scaleY(0.3);
+  }
+}

@@ -1,0 +1,31 @@
+.section {
+  &-primary {
+    position: relative;
+    background: $secondary;
+    padding-bottom: 4rem;
+  }
+
+  &-head {
+    text-align: center;
+    padding-top: 7rem;
+    background: $primary;
+  }
+
+  &-head-inner {
+    display: inline-block;
+    padding: 3rem 1rem;
+    z-index: 1;
+    position: relative;
+
+    .is-title {
+      padding: 0 3rem;
+    }
+  }
+
+  &-break {
+    width: 100%;
+    padding-top: 5%;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    background: $primary;
+  }
+}
