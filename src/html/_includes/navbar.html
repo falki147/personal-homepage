@@ -9,17 +9,18 @@
     <ul class="nav">
       {%- for menuItem in menuItems -%}
         <li class="nav-item">
-          <a class="nav-link" href="{{ menuItem.href }}">{{ menuItem.title }}</a>
+          <a class="nav-link" href="{{ menuItem.href }}">{{ titles[language][menuItem.title] }}</a>
         </li>
       {%- endfor -%}
     </ul>
     <div class="navbar-separator"></div>
     <ul class="nav">
-      {%- for language in languages -%}
-        <li class="nav-item">
-          <a class="nav-link" href="#">{{ language }}</a>
-        </li>
-      {%- endfor -%}
+      <li class="nav-item">
+        <a class="nav-link" href="/">en</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/de">de</a>
+      </li>
     </ul>
   </div>
 </nav>

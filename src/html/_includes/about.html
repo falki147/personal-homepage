@@ -1,4 +1,5 @@
-<h2 class="section-title" id="about">About</h2>
-<p>
-  Hi, I'm Florian Preinfalk and I'm a software developer. I'm currently employed by <a href="https://www.incert.at/" target="_blank">incert eTourismus</a> as a PHP backend developer.
-</p>
+<h2 class="section-title" id="about">{{ titles[language]['about'] }}</h2>
+
+{%- for paragraph in about[language] -%}
+  <p>{{ paragraph }}</p>
+{%- endfor -%}

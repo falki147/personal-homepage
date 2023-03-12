@@ -1,4 +1,4 @@
-<h2 class="section-title">Projects</h2>
+<h2 class="section-title">{{ titles[language]['projects'] }}</h2>
 {% for project in projects %}
   <div class="project">
     <h3 class="project-title">{{ project.title }}</h3>
@@ -8,11 +8,11 @@
       {% endfor %}
     </ul>
     <p>
-      {{ project.content }}
+      {{ project.content[language] }}
     </p>
     <p>
       {% for button in project.buttons %}
-        <a class="button" href="{{ button.url }}" target="_blank">{{ button.title }}</a>
+        <a class="button" href="{{ button.url }}" target="_blank">{{ button.title[language] }}</a>
       {% endfor %}
     </p>
   </div>

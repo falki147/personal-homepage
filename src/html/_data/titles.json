@@ -1,0 +1,14 @@
+{
+  "en": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "de": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  }
+}

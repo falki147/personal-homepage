@@ -2,46 +2,121 @@
   {
     "title": "fps6",
     "tags": [ "C++", "OpenGL" ],
-    "content": "This is a game which is based on the <a href=\"http://web.archive.org/web/20150630205952/http://sandbox.yoyogames.com/make/tutorials\" target=\"_blank\">fps tutorial from GameMaker</a>, which is basically a Wolfenstein 3D clone with a single level. This version however was extended by cheats, mouse support, music and an indicator of when you have actually finished the level. In addition to the gameplay improvements, a random level mode was added, where new levels are generated on the fly.",
+    "content": {
+      "en": "This is a game which is based on the <a href=\"http://web.archive.org/web/20150630205952/http://sandbox.yoyogames.com/make/tutorials\" target=\"_blank\">fps tutorial from GameMaker</a>, which is basically a Wolfenstein 3D clone with a single level. This version however was extended by cheats, mouse support, music and an indicator of when you have actually finished the level. In addition to the gameplay improvements, a random level mode was added, where new levels are generated on the fly.",
+      "de": "Dies ist ein Spiel, das auf dem <a href=\"http://web.archive.org/web/20150630205952/http://sandbox.yoyogames.com/make/tutorials\" target=\"_blank\">fps-Tutorial von GameMaker</a> basiert, das im Grunde ein Wolfenstein 3D-Klon mit einem einzigen Level ist. Diese Version wurde jedoch um Cheats, Mausunterstützung, Musik und eine Anzeige, wann man das Level tatsächlich beendet hat, erweitert. Zusätzlich zu den Gameplay-Verbesserungen wurde ein Zufallslevel-Modus hinzugefügt, bei dem neue Levels in Echtzeit generiert werden."
+    },
     "buttons": [
-      { "title": "Play in Browser", "url": "/demo/fps6" },
-      { "title": "View Code", "url": "https://github.com/falki147/fps6" }
+      {
+        "title": {
+          "en": "Play in Browser",
+          "de": "Im Browser spielen"
+        },
+        "url": "/demo/fps6"
+      },
+      {
+        "title": {
+          "en": "View Code",
+          "de": "Code durchstöbern"
+        },
+        "url": "https://github.com/falki147/fps6"
+      }
     ]
   },
   {
     "title": "GMLAST",
     "tags": [ "C++", "Syntaxanalysis" ],
-    "content": "GMLAST is a parser and lexer for the <a href=\"https://en.wikipedia.org/wiki/GameMaker#GameMaker_Language\" target=\"_blank\">Game Maker Language (GML)</a>. It takes text and converts it into an <a href=\"https://en.wikipedia.org/wiki/Abstract_syntax_tree\" target=\"_blank\">abstract syntax tree (AST)</a> for further processing. It can also be used for error detection.",
+    "content": {
+      "en": "GMLAST is a parser and lexer for the <a href=\"https://en.wikipedia.org/wiki/GameMaker#GameMaker_Language\" target=\"_blank\">Game Maker Language (GML)</a>. It takes text and converts it into an <a href=\"https://en.wikipedia.org/wiki/Abstract_syntax_tree\" target=\"_blank\">abstract syntax tree (AST)</a> for further processing. It can also be used for error detection.",
+      "de": "GMLAST ist ein Parser und Lexer für <a href=\"https://en.wikipedia.org/wiki/GameMaker#GameMaker_Language\" target=\"_blank\">Game Maker Language (GML)</a>. Die Biliothek nimmt Text und wandelt ihn in einen <a href=\"https://en.wikipedia.org/wiki/Abstract_syntax_tree\" target=\"_blank\">abstrakten Syntaxbaum (AST)</a> für die weitere Verarbeitung um. Sie kann auch zur Fehlererkennung verwendet werden."
+    },
     "buttons": [
-      { "title": "Try the demo", "url": "/demo/GMLAST" },
-      { "title": "View Code", "url": "https://github.com/falki147/GMLAST" }
+      {
+        "title": {
+          "en": "Try the demo",
+          "de": "Demo probieren"
+        },
+        "url": "/demo/GMLAST"
+      },
+      {
+        "title": {
+          "en": "View Code",
+          "de": "Code durchstöbern"
+        },
+        "url": "https://github.com/falki147/GMLAST"
+      }
     ]
   },
   {
     "title": "Analytics as a Service (Frontend)",
     "tags": [ "Angular", "TypeScript" ],
-    "content": "\"Analytics as a Service\", or AaaS, is a service for gathering data and log messages of applications. It was developed for the WEA5 course. This only contains the frontend.",
+    "content": {
+      "en": "\"Analytics as a Service\", or AaaS, is a service for gathering data and log messages of applications. It was developed for the WEA5 course. This only contains the frontend.",
+      "de": "\"Analytics as a Service\", oder AaaS, ist ein Dienst zum Sammeln von Daten und Protokollmeldungen von Anwendungen. Er wurde für den WEA5-Kurs entwickelt. Dieses Projekt enthält nur das Frontend."
+    },
     "buttons": [
-      { "title": "Try the demo", "url": "/demo/analytics-as-a-service" },
-      { "title": "View Code", "url": "https://github.com/falki147/wea5" }
+      {
+        "title": {
+          "en": "Try the demo",
+          "de": "Demo probieren"
+        },
+        "url": "/demo/analytics-as-a-service"
+      },
+      {
+        "title": {
+          "en": "View Code",
+          "de": "Code durchstöbern"
+        },
+        "url": "https://github.com/falki147/wea5"
+      }
     ]
   },
   {
     "title": "MikePay",
     "tags": [ "JavaScript" ],
-    "content": "This project facilitates collective food delivery orders. Each user can add their prefered item to an online order. The admin pays for the order and the user can pay him later. It was developed for the WDP3 course.",
+    "content": {
+      "en": "This project facilitates collective food delivery orders. Each user can add their prefered item to an online order. The admin pays for the order and the user can pay him later. It was developed for the WDP3 course.",
+      "de": "Dieses Projekt erleichtert Sammelbestellungen bei Lieferdiensten. Jeder Nutzer kann seinen bevorzugten Artikel zu einer Online-Bestellung hinzufügen. Der Administrator bezahlt die Bestellung und der Nutzer kann später bezahlen. Es wurde für den WDP3-Kurs entwickelt."
+    },
     "buttons": [
-      { "title": "Try the demo", "url": "/demo/mike-pay" },
-      { "title": "View Code", "url": "https://github.com/falki147/MikePay" }
+      {
+        "title": {
+          "en": "Try the demo",
+          "de": "Demo probieren"
+        },
+        "url": "/demo/mike-pay"
+      },
+      {
+        "title": {
+          "en": "View Code",
+          "de": "Code durchstöbern"
+        },
+        "url": "https://github.com/falki147/MikePay"
+      }
     ]
   },
   {
     "title": "MVVWB",
     "tags": [ "WordPress", "PHP", "CSS", "JavaScript" ],
-    "content": "I'm the administrator of <a href=\"https://www.mvvwb.at/\" target=\"_blank\">www.mvvwb.at</a>, the website of our local wind band. The site is built with WordPress. It uses a custom template and custom plugins.",
+    "content": {
+      "en": "I'm the administrator of <a href=\"https://www.mvvwb.at/\" target=\"_blank\">www.mvvwb.at</a>, the website of our local wind band. The site is built with WordPress. It uses a custom template and custom plugins.",
+      "de": "Ich bin der Administrator von <a href=\"https://www.mvvwb.at/\" target=\"_blank\">www.mvvwb.at</a>, der Website unseres örtlichen Musikvereins. Die Seite ist mit WordPress erstellt. Sie verwendet ein eigenes Design und eigene Plugins."
+    },
     "buttons": [
-      { "title": "Visit mvvwb.at", "url": "https://mvvwb.at/" },
-      { "title": "View Code", "url": "https://github.com/falki147/mvvwb" }
+      {
+        "title": {
+          "en": "Visit mvvwb.at",
+          "de": "mvvwb.at besuchen"
+        },
+        "url": "https://mvvwb.at/"
+      },
+      {
+        "title": {
+          "en": "View Code",
+          "de": "Code durchstöbern"
+        },
+        "url": "https://github.com/falki147/mvvwb"
+      }
     ]
   }
 ]
