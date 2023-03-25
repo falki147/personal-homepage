@@ -1,3 +1,4 @@
+import PhotoSwipeLightbox from "photoswipe/dist/photoswipe-lightbox.esm";
 import { ready } from "./ready";
 
 function checkScrolled() {
@@ -47,4 +48,14 @@ ready(() => {
 
   document.addEventListener('scroll', checkScrolled);
   checkScrolled();
+
+  for (const gallery of document.querySelectorAll('.gallery')) {
+    const lightbox = new PhotoSwipeLightbox({
+      gallery,
+      children: 'a',
+      padding: { top: 40, bottom: 40, left: 40, right: 40 },
+      pswpModule: () => import("photoswipe")
+    });
+    lightbox.init();
+  }
 });

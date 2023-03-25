@@ -1,3 +1,4 @@
+const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
@@ -21,5 +22,10 @@ module.exports = {
         ],
       },
     ],
+  },
+  resolve: {
+    alias: {
+      'photoswipe': path.resolve(__dirname, './node_modules/photoswipe'),
+    },
   },
 };

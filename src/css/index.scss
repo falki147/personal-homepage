@@ -1,5 +1,7 @@
 @use "sass:math";
 
+@import "~photoswipe";
+
 @import "variables.scss";
 
 @import "container.scss";
@@ -73,4 +75,8 @@ button {
   appearance: none;
   padding: 0;
   margin: 0;
+}
+
+.shadow {
+  box-shadow: 0 0 5px rgba(#000, 0.2);
 }

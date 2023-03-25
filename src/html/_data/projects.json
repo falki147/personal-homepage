@@ -2,6 +2,7 @@
   {
     "title": "fps6",
     "tags": [ "C++", "OpenGL" ],
+    "images": [ "fps6_1.png", "fps6_2.png", "fps6_3.png", "fps6_4.png", "fps6_5.png" ],
     "content": {
       "en": "This is a game which is based on the <a href=\"http://web.archive.org/web/20150630205952/http://sandbox.yoyogames.com/make/tutorials\" target=\"_blank\">fps tutorial from GameMaker</a>, which is basically a Wolfenstein 3D clone with a single level. This version however was extended by cheats, mouse support, music and an indicator of when you have actually finished the level. In addition to the gameplay improvements, a random level mode was added, where new levels are generated on the fly.",
       "de": "Dies ist ein Spiel, das auf dem <a href=\"http://web.archive.org/web/20150630205952/http://sandbox.yoyogames.com/make/tutorials\" target=\"_blank\">fps-Tutorial von GameMaker</a> basiert, das im Grunde ein Wolfenstein 3D-Klon mit einem einzigen Level ist. Diese Version wurde jedoch um Cheats, Mausunterstützung, Musik und eine Anzeige, wann man das Level tatsächlich beendet hat, erweitert. Zusätzlich zu den Gameplay-Verbesserungen wurde ein Zufallslevel-Modus hinzugefügt, bei dem neue Levels in Echtzeit generiert werden."
@@ -50,6 +51,7 @@
   {
     "title": "Analytics as a Service (Frontend)",
     "tags": [ "Angular", "TypeScript" ],
+    "images": [ "AaaS_1.png", "AaaS_2.png", "AaaS_3.png", "AaaS_4.png", "AaaS_5.png" ],
     "content": {
       "en": "\"Analytics as a Service\", or AaaS, is a service for gathering data and log messages of applications. It was developed for the WEA5 course. This only contains the frontend.",
       "de": "\"Analytics as a Service\", oder AaaS, ist ein Dienst zum Sammeln von Daten und Protokollmeldungen von Anwendungen. Er wurde für den WEA5-Kurs entwickelt. Dieses Projekt enthält nur das Frontend."
@@ -74,6 +76,7 @@
   {
     "title": "MikePay",
     "tags": [ "JavaScript" ],
+    "images": [ "MikePay_1.png", "MikePay_2.png", "MikePay_3.png", "MikePay_4.png", "MikePay_5.png" ],
     "content": {
       "en": "This project facilitates collective food delivery orders. Each user can add their prefered item to an online order. The admin pays for the order and the user can pay him later. It was developed for the WDP3 course.",
       "de": "Dieses Projekt erleichtert Sammelbestellungen bei Lieferdiensten. Jeder Nutzer kann seinen bevorzugten Artikel zu einer Online-Bestellung hinzufügen. Der Administrator bezahlt die Bestellung und der Nutzer kann später bezahlen. Es wurde für den WDP3-Kurs entwickelt."
@@ -98,6 +101,7 @@
   {
     "title": "MVVWB",
     "tags": [ "WordPress", "PHP", "CSS", "JavaScript" ],
+    "images": [ "mvvwb_1.png", "mvvwb_2.png", "mvvwb_3.png", "mvvwb_4.png", "mvvwb_5.png" ],
     "content": {
       "en": "I'm the administrator of <a href=\"https://www.mvvwb.at/\" target=\"_blank\">www.mvvwb.at</a>, the website of our local wind band. The site is built with WordPress. It uses a custom template and custom plugins.",
       "de": "Ich bin der Administrator von <a href=\"https://www.mvvwb.at/\" target=\"_blank\">www.mvvwb.at</a>, der Website unseres örtlichen Musikvereins. Die Seite ist mit WordPress erstellt. Sie verwendet ein eigenes Design und eigene Plugins."

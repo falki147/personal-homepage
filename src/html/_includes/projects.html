@@ -7,6 +7,11 @@
         <li class="inline-list-item pill">{{ tag }}</li>
       {% endfor %}
     </ul>
+    <p class="gallery">
+      {% for image in project.images %}
+        {% gallery-image image 'Screenshot' %}
+      {% endfor %}
+    </p>
     <p>
       {{ project.content[language] }}
     </p>
