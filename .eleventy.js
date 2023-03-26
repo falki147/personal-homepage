@@ -1,4 +1,3 @@
-// const sharp = require("sharp");
 const Image = require("@11ty/eleventy-img");
 const path = require("path");
 
@@ -24,18 +23,6 @@ module.exports = config => {
 
   config.addPassthroughCopy("assets");
   config.addPassthroughCopy("demo");
-
-  /*config.addPassthroughCopy("images", {
-    rename: path => path.replace(/\.png$/g, '.webp'),
-    transform: () => sharp().webp()
-  });
-
-  config.addPassthroughCopy("images", {
-    rename: path => path.replace(/\.png$/g, '-thumb.webp'),
-    transform: () => sharp().resize({
-      height: 70
-    }).webp()
-  });*/
 
   return {
     dir: {
