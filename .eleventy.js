@@ -9,7 +9,7 @@ async function galleryImageShortcode(src, alt) {
   src = path.join(__dirname, 'images', src);
 
   const metadata = await Image(src, {
-    widths: [100, "auto"],
+    widths: [150, "auto"],
     formats: ["webp"],
     outputDir: "dist/img"
   });
