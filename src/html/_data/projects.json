@@ -28,7 +28,7 @@
     "title": "GMLAST",
     "tags": [ "C++", "Syntaxanalysis" ],
     "content": {
-      "en": "GMLAST is a parser and lexer for the <a href=\"https://en.wikipedia.org/wiki/GameMaker#GameMaker_Language\" target=\"_blank\">Game Maker Language (GML)</a>. It takes text and converts it into an <a href=\"https://en.wikipedia.org/wiki/Abstract_syntax_tree\" target=\"_blank\">abstract syntax tree (AST)</a> for further processing. It can also be used for error detection.",
+      "en": "GMLAST is a library that performs lexical analysis and parsing of the <a href=\"https://en.wikipedia.org/wiki/GameMaker#GameMaker_Language\" target=\"_blank\">Game Maker Language (GML)</a>. Its primary function is to transform GML code into an <a href=\"https://en.wikipedia.org/wiki/Abstract_syntax_tree\" target=\"_blank\">abstract syntax tree (AST)</a> that can be utilized for further processing. Additionally, it is capable of identifying errors in the code.",
       "de": "GMLAST ist ein Parser und Lexer für <a href=\"https://en.wikipedia.org/wiki/GameMaker#GameMaker_Language\" target=\"_blank\">Game Maker Language (GML)</a>. Die Biliothek nimmt Text und wandelt ihn in einen <a href=\"https://en.wikipedia.org/wiki/Abstract_syntax_tree\" target=\"_blank\">abstrakten Syntaxbaum (AST)</a> für die weitere Verarbeitung um. Sie kann auch zur Fehlererkennung verwendet werden."
     },
     "buttons": [
@@ -53,8 +53,8 @@
     "tags": [ "Angular", "TypeScript" ],
     "images": [ "AaaS_1.png", "AaaS_2.png", "AaaS_3.png", "AaaS_4.png", "AaaS_5.png" ],
     "content": {
-      "en": "\"Analytics as a Service\", or AaaS, is a service for gathering data and log messages of applications. It was developed for the WEA5 course. This only contains the frontend.",
-      "de": "\"Analytics as a Service\", oder AaaS, ist ein Dienst zum Sammeln von Daten und Protokollmeldungen von Anwendungen. Er wurde für den WEA5-Kurs entwickelt. Dieses Projekt enthält nur das Frontend."
+      "en": "AaaS, which stands for \"Analytics as a Service\", is a service that is designed to collect data and log messages from various applications. It was originally created for the SWK5 and WEA5 courses. The provided demo and its source code only covers the frontend component.",
+      "de": "\"Analytics as a Service\", oder AaaS, ist ein Dienst, der Daten und Protokollnachrichten aus verschiedenen Anwendungen sammelt. Er wurde ursprünglich für den SWK5 und den WEA5-Kurs entwickelt. Die bereitgestellte Demo und deren Quellcode umfassen nur die Frontend-Komponente."
     },
     "buttons": [
       {
@@ -78,7 +78,7 @@
     "tags": [ "JavaScript" ],
     "images": [ "MikePay_1.png", "MikePay_2.png", "MikePay_3.png", "MikePay_4.png", "MikePay_5.png" ],
     "content": {
-      "en": "This project facilitates collective food delivery orders. Each user can add their prefered item to an online order. The admin pays for the order and the user can pay him later. It was developed for the WDP3 course.",
+      "en": "This is a project designed to make it easier for people to order food collectively. Users can add their desired items to an online order, which the administrator will pay for, and then the users can reimburse the administrator later. This project was created specifically for the WDP3 course.",
       "de": "Dieses Projekt erleichtert Sammelbestellungen bei Lieferdiensten. Jeder Nutzer kann seinen bevorzugten Artikel zu einer Online-Bestellung hinzufügen. Der Administrator bezahlt die Bestellung und der Nutzer kann später bezahlen. Es wurde für den WDP3-Kurs entwickelt."
     },
     "buttons": [
@@ -129,7 +129,7 @@
     "images": [ "bnb_1.png", "bnb_2.png", "bnb_3.png", "bnb_4.png", "bnb_5.png" ],
     "content": {
       "en": "In this third-person 3D platformer game, the objective is to collect as many diamonds as possible while reaching the end. However, be cautious of dangerous obstacles such as spikes and enemies that you must avoid along the way. The game consists of four different levels to play through. Developed in 2016 as a school project, this game was written in C# using SDL2, OpenGL, and the Bullet physics engine.",
-      "de": ""
+      "de": "In diesem Third-Person-3D-Platformer ist es das Ziel, so viele Diamanten wie möglich zu sammeln und das Ziel zu erreichen. Achte jedoch auf gefährliche Hindernisse wie Stacheln und Feinde, die du auf dem Weg abwenden musst. Das Spiel besteht aus vier verschiedenen Levels, die du durchspielen kannst. Dieses Spiel wurde 2016 als Schulprojekt entwickelt und in C# mit Hilfe von SDL2, OpenGL und der Bullet-Physik-Engine geschrieben."
     },
     "buttons": [
       {
