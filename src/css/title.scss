@@ -2,10 +2,6 @@
   font-size: 4rem;
   font-weight: bold;
   text-transform: uppercase;
-
-  @media screen and (max-width: $responsive-mobile) {
-    font-size: 3rem;
-  }
 }
 
 .is-subtitle {

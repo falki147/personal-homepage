@@ -2,24 +2,20 @@
   &-primary {
     position: relative;
     background: $secondary;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
   }
 
   &-head {
     text-align: center;
-    padding-top: 7rem;
+    padding-top: 4rem;
     background: $primary;
   }
 
   &-head-inner {
     display: inline-block;
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
     z-index: 1;
     position: relative;
-
-    .is-title {
-      padding: 0 3rem;
-    }
   }
 
   &-break {
