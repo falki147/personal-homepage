@@ -1,7 +1,7 @@
 <h2 class="section-title">{{ titles[language]['projects'] }}</h2>
 {% for project in projects %}
   <div class="project">
-    <h3 class="project-title">{{ project.title }}</h3>
+    <h3 class="subsection-title">{{ project.title }}</h3>
     <ul class="inline-list">
       {% for tag in project.tags %}
         <li class="inline-list-item pill">{{ tag }}</li>
