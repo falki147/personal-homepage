@@ -19,6 +19,14 @@ function getChildrenHeight(element) {
   return height;
 }
 
+function findParent(element, query) {
+  if (!element || element.matches(query)) {
+    return element;
+  }
+
+  return findParent(element.parentElement, query);
+}
+
 ready(() => {
   for (const button of document.querySelectorAll('.navbar-button')) {
     const controlledElement = document.getElementById(button.getAttribute('aria-controls'));
@@ -57,5 +65,46 @@ ready(() => {
       pswpModule: () => import("photoswipe")
     });
     lightbox.init();
+  }
+
+  for (const navLink of document.querySelectorAll('.nav-link')) {
+    const attr = navLink.attributes['href'];
+    if (!attr || !attr.value.startsWith('#')) {
+      continue;
+    }
+
+    const navbar = findParent(navLink, '.navbar');
+    if (!navbar) {
+      continue;
+    }
+
+    const element = document.getElementById(attr.value.substring(1));
+    if (element || attr.value === '#') {
+      navLink.addEventListener('click', ev => {
+        let offsetPosition = 0;
+
+        if (element) {
+          let headerOffset = navbar.scrollHeight;
+          if (navbar.classList.contains('open')) {
+            const navbarCollapse = navbar.querySelector('.navbar-collapse');
+            if (navbarCollapse) {
+              headerOffset -= navbarCollapse.scrollHeight;
+            }
+          }
+
+          console.log(headerOffset);
+
+          const elementPosition = element.getBoundingClientRect().top;
+          offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        }
+      
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+
+        ev.preventDefault();
+      });
+    }
   }
 });
