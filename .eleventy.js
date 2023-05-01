@@ -23,6 +23,7 @@ module.exports = config => {
 
   config.addPassthroughCopy("assets");
   config.addPassthroughCopy("demo");
+  config.addPassthroughCopy({ "src/php": "/" });
 
   return {
     dir: {
