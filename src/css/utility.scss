@@ -1,0 +1,22 @@
+.pill {
+  background: $primary;
+  border-radius: 0.2rem;
+  color: $textcolor-primary;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.8rem;
+}
+
+.inline-list {
+  display: inline-block;
+  margin: 0.2rem -0.2rem;
+  padding: 0;
+
+  &-item {
+    display: inline-block;
+    margin: 0 0.2rem;
+  }
+}
+
+.shadow {
+  box-shadow: 0 0 5px rgba(#000, 0.2);
+}

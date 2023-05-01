@@ -1,0 +1,13 @@
+.button {
+  display: inline-block;
+  background: $primary;
+  border-radius: 0.2rem;
+  color: $textcolor-primary;
+  padding: 0.4rem 0.8rem;
+  font-weight: normal;
+
+  &:hover, &:focus {
+    background: darken($primary, 20);
+    text-decoration: none;
+  }
+}

@@ -4,11 +4,13 @@
 
 @import "variables.scss";
 
+@import "button.scss";
 @import "container.scss";
 @import "nav.scss";
 @import "navbar-button.scss";
 @import "section.scss";
 @import "title.scss";
+@import "utility.scss";
 
 html {
   font-family: $font-family;
@@ -25,23 +27,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
 }
 
-.pill {
-  background: $primary;
-  border-radius: 0.2rem;
-  color: $textcolor-primary;
-  padding: 0.1rem 0.4rem;
-  font-size: 0.8rem;
-}
-
-.inline-list {
-  display: inline-block;
-  margin: 0.2rem -0.2rem;
+button {
+  background: none;
+  border: none;
+  appearance: none;
   padding: 0;
-
-  &-item {
-    display: inline-block;
-    margin: 0 0.2rem;
-  }
+  margin: 0;
 }
 
 a {
@@ -52,30 +43,4 @@ a {
   &:hover, &:focus {
     text-decoration: underline;
   }
-}
-
-.button {
-  display: inline-block;
-  background: $primary;
-  border-radius: 0.2rem;
-  color: $textcolor-primary;
-  padding: 0.4rem 0.8rem;
-  font-weight: normal;
-
-  &:hover, &:focus {
-    background: darken($primary, 20);
-    text-decoration: none;
-  }
-}
-
-button {
-  background: none;
-  border: none;
-  appearance: none;
-  padding: 0;
-  margin: 0;
-}
-
-.shadow {
-  box-shadow: 0 0 5px rgba(#000, 0.2);
 }
