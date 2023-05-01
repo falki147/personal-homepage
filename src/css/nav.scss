@@ -60,10 +60,14 @@
       margin: 0.2rem 1rem;
     }
   }
- 
+
   &-collapse {
     display: flex;
     justify-content: end;
+
+    @media screen and (min-width: $responsive-mobile + 1) {
+      height: auto !important;
+    }
 
     @media screen and (max-width: $responsive-mobile) {
       display: block;
