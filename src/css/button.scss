@@ -5,6 +5,7 @@
   color: $textcolor-primary;
   padding: 0.4rem 0.8rem;
   font-weight: normal;
+  margin-bottom: 0.2rem;
 
   &:hover, &:focus {
     background: darken($primary, 20);
