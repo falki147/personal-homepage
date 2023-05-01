@@ -2,6 +2,10 @@
   font-size: 4rem;
   font-weight: bold;
   text-transform: uppercase;
+
+  @media screen and (max-width: $responsive-mobile) {
+    font-size: 3rem;
+  }
 }
 
 .is-subtitle {
@@ -14,6 +18,10 @@
   margin: 0 -0.5rem;
   margin-top: 1rem;
   border-bottom: 1px solid $primary;
+
+  @media screen and (max-width: $responsive-mobile) {
+    font-size: 1.5rem;
+  }
 }
 
 .project-title {
@@ -22,4 +30,8 @@
   margin: 0 -0.5rem;
   margin-top: 2rem;
   border-bottom: 1px solid $primary;
+
+  @media screen and (max-width: $responsive-mobile) {
+    font-size: 1rem;
+  }
 }
