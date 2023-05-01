@@ -11,7 +11,7 @@
     width: $navbar-button-width;
     height: $navbar-button-tile;
     border-radius: math.div($navbar-button-tile, 2);
-    background: $textcolor;
+    background: $textcolor-head;
     transition: 0.2s ease transform;
 
     &:nth-child(1) {

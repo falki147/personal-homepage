@@ -19,7 +19,7 @@
   }
 
   &-link {
-    color: $textcolor;
+    color: $textcolor-head;
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
@@ -49,7 +49,7 @@
   }
 
   &-separator {
-    background: $textcolor;
+    background: $textcolor-head;
     width: 0.1rem;
     height: 2rem;
     margin: 0.7rem 0;
