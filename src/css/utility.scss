@@ -20,3 +20,9 @@
 .shadow {
   box-shadow: 0 0 5px rgba(#000, 0.2);
 }
+
+@media screen and (max-width: $responsive-mobile) {
+  .mobile-hidden {
+    display: none;
+  }
+}

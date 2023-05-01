@@ -17,7 +17,7 @@
     </p>
     <p>
       {% for button in project.buttons %}
-        <a class="button" href="{{ button.url }}" target="_blank">{{ button.title[language] }}</a>
+        <a class="button {{ button.class }}" href="{{ button.url }}" target="_blank">{{ button.title[language] }}</a>
       {% endfor %}
     </p>
   </div>

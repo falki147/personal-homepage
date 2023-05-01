@@ -13,6 +13,7 @@
           "en": "Try the demo",
           "de": "Demo probieren"
         },
+        "class": "mobile-hidden",
         "url": "/demo/analytics-as-a-service"
       },
       {
@@ -113,6 +114,7 @@
           "en": "Play in Browser",
           "de": "Im Browser spielen"
         },
+        "class": "mobile-hidden",
         "url": "/demo/fps6"
       },
       {
