@@ -92,8 +92,6 @@ ready(() => {
             }
           }
 
-          console.log(headerOffset);
-
           const elementPosition = element.getBoundingClientRect().top;
           offsetPosition = elementPosition + window.pageYOffset - headerOffset;
         }
