@@ -75,7 +75,7 @@
       overflow: hidden;
       transition: .2s ease height;
 
-      & :last-child {
+      & .nav:last-child {
         padding-bottom: 0.5rem;
       }
     }
